@@ -1,0 +1,24 @@
+.flag-container {
+  display: flex;
+  align-items: center;  /* Căn giữa theo chiều dọc */
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  gap: 40px; /* Khoảng cách giữa các phần tử */
+}
+
+.flag {
+  width: 100px; /* Điều chỉnh kích thước cờ */
+  height: auto;
+  animation: waving 1.5s infinite ease-in-out alternate; /* Hiệu ứng gió thổi */
+}
+
+.dancing-cat {
+  width: 100px;  /* Giữ kích thước của GIF bằng lá cờ */
+  height: 100px;
+  overflow: hidden; /* Giữ GIF trong khung */
+}
+
+/* Animation gió thổi cho cờ */
+@keyframes waving {
+  0% { transform: rotate(10deg); }
+  100% { transform: rotate(-10deg); }
+}

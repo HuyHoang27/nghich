@@ -1,0 +1,37 @@
+
+/* Style cho thiệp */
+.card {
+    position: absolute;
+    height: auto;
+    top: -100%;  /*Đặt ngay dưới hộp quà */
+    bottom: 100%;
+    left: 0;
+    width: 200px; /* Bạn có thể điều chỉnh kích thước */
+    margin-top: 0px;  /* Khoảng cách giữa hộp và thiệp */
+    border-radius: 0px;
+    background-color: white;
+    background-size: cover;
+    box-shadow: 0px 0px 20px red;
+    text-align: center;
+    padding: 10px;
+    transform: rotate(180deg);
+    z-index: 10;
+    display: none; /* Ẩn mặc định */
+}
+
+.card-show{
+    opacity: 1 !important;
+    left: 0 !important;
+    /* transition: all 2s; */
+}
+
+h4 {
+    text-align: center;
+    -webkit-text-fill-color: rgba(0, 200, 200, 0.1);
+    -webkit-background-clip: text;
+    background-image: url("https://i.pinimg.com/originals/20/21/7f/20217f7fa2c9701b8128d8fb153a4db9.gif");
+    font-family: 'Allura', cursive;
+    padding: -2%;
+    font-size: 19px;
+    overflow: hidden;
+}

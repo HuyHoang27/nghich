@@ -1,0 +1,118 @@
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quà Tặng & Thiệp Chúc Mừng</title>
+    <!-- Các file CSS riêng biệt -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/giftbox.css">
+    <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/flag.css">
+</head>
+
+<body>
+
+    <h1>Quà đặc biệt dành cho người đặc biệt !!!</h1>
+    <div class="flag-container">
+        <!-- Mèo nhảy bên trái -->
+        <div class="dancing-cat">
+            <div class="tenor-gif-embed" data-postid="7691001284574971460" data-share-method="host"
+                data-aspect-ratio="1" data-width="100%">
+                <a href="https://tenor.com/view/pox3d-gif-7691001284574971460">Pox3d Sticker</a>
+            </div>
+        </div>
+
+        <!-- Lá cờ bên trái -->
+        <img class="flag" src="assets/images/My.svg" alt="Flag A">
+
+        <!-- Lá cờ bên phải -->
+        <img class="flag" src="assets/images/Anh.svg" alt="Flag B">
+
+        <!-- Mèo nhảy bên phải -->
+        <div class="dancing-cat">
+            <div class="tenor-gif-embed" data-postid="8762738532427761680" data-share-method="host"
+                data-aspect-ratio="1" data-width="100%">
+                <a href="https://tenor.com/view/pox3d-gif-8762738532427761680">Pox3d Sticker</a>
+            </div>
+        </div>
+        <img id="music-toggle" src="assets/images/loa.jpg" alt="Loa" width="50" height="50" style="cursor: pointer;">
+        <audio id="bg-music" src="assets/music/nhacvcl.mp3" autoplay loop></audio>
+    </div>
+
+    <!-- Phần chứa các hộp quà -->
+    <section class="above-fold">
+        <div class="wrap-present">
+            <!-- Gift Box 1 -->
+            <div class="present-box" data-index="0">
+                <div class="present">
+                    <div class="img-wrap"></div>
+                </div>
+                <div class="side front"></div>
+                <div class="side back"></div>
+                <div class="side left"></div>
+                <div class="side right"></div>
+                <div class="side top">
+                    <span class="to">
+                        <span class="name"></span>
+                    </span>
+                </div>
+                <div class="side bottom"></div>
+            </div>
+            <!-- Gift Box 2 -->
+            <div class="present-box" data-index="1">
+                <div class="present">
+                    <div class="img-wrap"></div>
+                </div>
+                <div class="side front"></div>
+                <div class="side back"></div>
+                <div class="side left"></div>
+                <div class="side right"></div>
+                <div class="side top">
+                    <span class="to">
+                        <span class="name"></span>
+                    </span>
+                </div>
+                <div class="side bottom"></div>
+            </div>
+            <!-- Gift Box 3 -->
+            <div class="present-box" data-index="2">
+                <div class="present">
+                    <div class="img-wrap"></div>
+                </div>
+                <div class="side front"></div>
+                <div class="side back"></div>
+                <div class="side left"></div>
+                <div class="side right"></div>
+                <div class="side top">
+                    <span class="to">
+                        <span class="name"></span>
+                    </span>
+                </div>
+                <div class="side bottom"></div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const audio = document.getElementById("bg-music");
+            const musicToggle = document.getElementById("music-toggle");
+
+            musicToggle.addEventListener("click", function () {
+                if (audio.paused) {
+                    audio.play();
+                } else {
+                    audio.pause();
+                }
+            });
+        });
+    </script>
+
+
+</body>
+<script src="js/script.js"></script>
+<script src="js/present.js"></script>
+<script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
+</html>
